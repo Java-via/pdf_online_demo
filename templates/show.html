@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block head %}
+    {{ super() }}
+    <style>
+        .frame_style{
+            width: 80%;
+            height: 100%;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    {{ super() }}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-lg-offset-2" style="height: 595px">
+                <iframe class="frame_style" src="http://127.0.0.1:5000/static/pdfjs/web/viewer.html?file=\static\doc\1481953691.pdf">
+                </iframe>
+            </div>
+        </div>
+    </div>
+{% endblock %}
